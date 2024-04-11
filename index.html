@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="img1.jpg" alt="landing page image" />
+    </div>
+
+    <div class="content">
+        <p>To unlock access to the website, we will send you a PIN which you must enter on the next page</p>
+    </div>
+
+    <div class="number-input">
+        <div id="border-container">
+            <span class="tooltip" id="phoneNumberContainer">
+                <span class="country-code"><p>+48</p></span>
+                <input type="text" id="phoneNumber" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" value="Your Number" name="Your Number" maxlength="11" required />
+                <span class="tick">
+                    <div class="check-img-container">
+                        <div id="img-overlay" class="image-overlay" style="background: rgba(170,170,170,0.6);"></div>
+                        <img class="check-image" src="check.png" alt="tick image" />
+                    </div>
+                </span>
+
+                <span class="tooltiptext" id="tooltiptoggle" style="visibility: hidden;">Introduce your correct number</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="btn">
+        <form id="submitForm" action="welcome.html">
+            <button type="submit" id="submit-button" class="ctn-btn" 
+            style="background-color: #555; animation: none;" disabled>CONTINUE</button>
+        </form>
+    </div>
+
+    <div class="order-access">
+        <p>Order access to [Website Name] The fee is XX.XX for every n days</p>
+    </div>
+
+    <label class="chkboxcontainer">
+        <div class="chkbox">
+            <input type="checkbox" id="chkbx">
+            <span class="checkmark"></span>
+        </div>
+        <div class="agcnt">
+            <p>
+                I accept the content of the [service name] regulations and the Order with Orange regulations.
+                I agree to the immediate commencement of performance and confirm that I am aware of the loss of
+                the right to withdraw from the contract.
+            </p>
+        </div>
+    </label>
+
+    <div class="term-and-conditions">
+        <div><p>Read the Terms and Conditions of Order with <a href="#">Orange</a></p></div>
+        <div><p>Read the Terms and Conditions of <a href="#">Platform</a></p></div>
+        <div><p>Please read the <a href="#">Privacy Policy of the XXX website</a></p></div>
+    </div>
+
+    <div class="term-and-conditions">
+        <p>
+            The fee will be added to your Orange bill (post-paid phone) or deducted fom the funds on your account (pre-paid phone).
+            Check the limits dor "Added to Bills" purchases with your Operator <a href="#">here</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
